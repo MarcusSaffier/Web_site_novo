@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0">
+    <title>Front-End Essencial</title>
+    <style type="text/css">
+        *{
+            margin: 0;
+            border: 0;
+            padding: 0;
+        }
+        html{
+            font-size: 62.5%;
+        }
+        header{
+            background-color: rgba(6, 0, 22, 0.95);
+            color: rgb(255, 255, 255);
+            font-family: arial;
+            width: 100%;
+            position: fixed;
+            
+        }
+        h3{
+            font-size: 1.9rem;
+            font-family: arial;
+            margin: 0;
+            padding: 5px;
+        }
+        h4{
+            font-size: 1rem;
+            font-family: arial;
+            margin: 0;
+            padding-left: 5px;
+            padding-bottom: 5px;
+        }
+        body{
+            background-color: rgb(59, 59, 88);
+        }
+        .container{
+            display: block;
+            
+            width: 95%;
+            box-shadow: 2px 2px rgb(6, 0, 22);
+            margin: 0 auto;
+            max-width: 90%;
+            max-height: 90%;
+            min-width: 0;
+            min-height: 0;
+            margin-top: 50px;
+        }
+        footer{
+            font-family: Arial;
+            color: white;
+            background-color: rgba(6, 0, 22, 0.95);
+            text-align: center;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            
+        }
+
+        p{
+            font-family: arial;
+            text-align: justify;
+            padding: 10px;
+            font-size: 1.6rem;
+
+        }
+        h1{
+            font-family: arial;
+            text-align: center;
+            padding-top: 10px;
+            font-size: 2.5rem;
+        }
+        h2{
+            font-size: 1.8;
+            font-family: arial;
+            text-align: center;
+            padding-top: 5px;
+        }
+        .texto-footer{
+            text-align: center;
+            font-family: arial;
+            font-size: 1.6rem;
+            padding-bottom: 10px;
+            padding-top: 10px;
+
+        }
+        .botao{
+            background-color: yellow;
+            position: fixed;
+            width: 100px;
+            height: 25px;
+            color: rgb(0, 0, 0);
+            text-align: center;
+            right: 0;
+            margin-top:12%;
+            z-index: 1;
+
+        }
+
+        h5{
+            font-family: arial;
+            text-align: center;
+            padding: 1px;
+            font-size: 1.9rem;
+            background-color: rgb(238, 241, 12);
+        }
+
+        button{
+            font-family: arial;
+            background-color: rgb(0, 0, 0);
+            text-align: center;
+            padding: 5px;
+            font-size: 1.9rem;
+            color: white;
+            border: solid #000;
+        }
+
+        #grid-container{
+            margin-top: 5px;
+            background-color: rgb(59, 59, 88);
+            
+        }
+        .grid{
+            display: grid;
+            margin: 0 auto; 
+            max-width: 1300px;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+            grid-gap: 15px;
+            background-color: rgb(59, 59, 88);
+
+            
+        }
+        .grid div{
+            background-color: white;
+            font-family: arial;
+            text-align: center;
+            font-size: 1.6rem;
+            padding: 2px;
+            
+        }
+
+
+    </style>
+
+</head>
+<body>
+    <header>
+        <h3>Marcus Saffier DEV</h3>
+        <h4>Front-End Essencial</h4>
+    </header>
+    <div class="botao">
+
+        <h5>Teste de clique de botão.</h5>
+        <button>Clique Aqui !!!</button>
+
+    </div>
+    
+    <br><br>
+    <section class="container">
+        <h1>Site Número Dois - Sobre Front-end</h1>
+        <h2>Resumo do termo</h2>
+        <p>O Front-end está muito relacionado com a interface gráfica do projeto. Ou seja, é onde se desenvolve a aplicação com a qual o usuário irá interagir diretamente, seja em softwares, sites, aplicativos, etc. Portanto, é essencial que o desenvolvedor tenha uma preocupação com a experiência do usuário.</p>
+        <p>Dev front-end é um termo muito utilizado para identificar profissionais que se especializaram especificamente nessa área. Além disso, apesar de envolver a interface do projeto, o programador front-end não é formado em design. A diferença entre os dois é que o desenvolvedor não desenha visualmente a interface.</p>
+        </section>
+        <br>
+        <section class="container">
+            <h1>Diferença entre front-end e back-end</h1>
+            
+            <p>O back-end é essencial para que tudo funcione bem e cumpra com a proposta do projeto. Um exemplo disso é um site dinâmico, que atualiza em tempo real com novas informações, como, por exemplo, um site de notícias. É preciso que seu banco de dados funcione corretamente para que o site não apresente problemas técnicos.</p>
+            <p>Já o front-end, como comentamos antes, é a conexão entre as funcionalidades de um sistema ou site com o usuário. Portanto, os dois são igualmente essenciais para que o produto funcione bem de modo geral e seja bem aceito pelos clientes.</p>
+            </section>
+
+        <br><br>
+
+        <br>
+        <section class="container" id="grid-container">
+
+            <div class="grid">
+                <div>Conteúdo 1</div>
+                <div>Conteúdo 2</div>
+                <div>Conteúdo 3</div>
+                <div>Conteúdo 4</div>
+                <div>Conteúdo 5</div>
+                <div>Conteúdo 6</div>
+                <div>Conteúdo 7</div>
+                <div>Conteúdo 8</div>
+                <div>Conteúdo 9</div>
+                <div>Conteúdo 10</div>
+
+
+            </div>
+            <h1><br>Por que o front-end deve ser valorizado?</h1>
+            
+            <p>Agora que você entende mais sobre a importância do front-end, veja a seguir os motivos pelos quais ele deve ser valorizado pelas empresas e pelos desenvolvedores:</p>
+            <p>A aparência de um site, sistema ou outro projeto do tipo é um dos fatores marcantes para o usuário, podendo ser também um dos motivos que os levam a desistir de utilizá-lo. Portanto, é importante que isso seja levando em conta no momento de desenvolver um app, site ou software.</p>
+            </section>
+
+        <br><br>
+    <footer>
+        <h3>Marcus Saffier DEV</h3>
+        <h4>Front-End Essencial</h4>
+        <br>
+        <p class="texto-footer">Contato: </p>
+        <p class="texto-footer">Marcus.saffier@gmail.com</p>
+        <p class="texto-footer">WhatsApp:(51)982656522</p>
+
+    </footer> 
+
+</body>
+
+</html>
